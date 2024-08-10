@@ -1,0 +1,140 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
+}
+
+/* Navbar Styles */
+
+#navbar {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure navbar is above other content */
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+#navbar li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.nav-link {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.nav-link:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Welcome Section Styles */
+
+#welcome-section {
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.welcome-container {
+    max-width: 800px;
+    padding: 20px;
+}
+
+#welcome-section h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+/* Projects Section Styles */
+
+#projects {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.project-tile {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.project-tile h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.project-tile p {
+    color: #666;
+}
+
+.project-link {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.project-link:hover {
+    background-color: #555;
+}
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#profile-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        text-align: center;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 10px 0;
+    }
+
+    #welcome-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .project-tile {
+        padding: 10px;
+    }
+}
